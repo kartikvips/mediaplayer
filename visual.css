@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    /* background: #5C647D; */
+    background: white;
+    position: relative;
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between;
+    height: 40px;
+    background: black;
+    /* background: linear-gradient(#070708, #5C647D); */
+    /* border-radius: 10px 10px 0 0; */
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.header:hover{
+    /* display:none; */
+}
+
+.wmp-logo {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.left-header p {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    color: white;
+    font-weight: 200;
+}
+
+.left-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#audio_box audio {
+    width: 100%;
+    height: 100px;
+}
+
+.song-list {
+    width: 20%;
+    background: #EEF3F9;
+}
+
+.right-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+
+.right-header * {
+    margin: 0 5px;
+}
+
+.close {
+    font-size: 24px;
+}
+
+.minimize, .maximize, .close {
+    color: #E4E8F1;
+}
+
+.mp3-player {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+#analyser-render {
+    /* width: 100%; */
+    /* height: calc(100% - 50px); */
+    /* height: 100%; */
+    /* background:#554477; */
+    background:black;
+}
+

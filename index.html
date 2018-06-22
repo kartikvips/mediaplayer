@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta charset="utf-8" /> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>KMP</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" href="visual.css" />
+    <link rel="stylesheet" type="text/css" href="audio.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <!-- <script src="visual.js"></script> -->
+    
+
+</head>
+<body>
+    <div class = 'main'>
+        <div class = 'header' id = 'header'>
+            <div class ='left-header'> 
+            <a href="https://github.com/kartikvips"> <img class='wmp-logo' src="http://www.iconsplace.com/icons/preview/white/github-256.png"></a>
+            <a href="https://www.linkedin.com/in/kartik-parihar-b90b3051/">
+            <img class='wmp-logo' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGVbzHIBv541kretucTYe40YeKot1s6sOgVxwzI0V5fDKP-XtC">
+            </a>
+                <p>Kartik Parihar</p>
+            </div>
+            <div class = 'right-header'>
+                <!-- <div class= 'minimize'>
+                    <i class="fas fa-window-minimize"></i>
+                </div> -->
+                <div class= 'maximize'>
+                    <i onclick="fullScreen();" class="far fa-window-maximize"></i>
+                </div>
+                <!-- <div class= 'close'>
+                    &times;
+                </div> -->
+            </div>
+            
+        </div>
+       
+        <div class = 'mp3-player'>
+            <canvas onclick="playOrPause()" id='analyser-render'></canvas>
+            <!-- <div class='song-list'>
+                SONGSSSSSSS
+            </div> -->
+
+        </div>
+
+        <div class = "drag-drop" id="dragDrop">
+            Drag and drop an MP3 file here or hit play to begin.
+        </div>
+        <div class = 'playlist-div' id = 'playlistDiv'>
+            <ul class = 'playlist' id = 'playlist'></ul>
+        </div>
+        <div id='audio-box'>
+            <!-- <div class = 'song-title' id = 'songTitle'>My song Title</div> -->
+            <div class = 'song-scroll' id = 'songScroll'>
+                <div id = 'currentTime' class = 'current-time'>00:00</div>
+                <input type="range" id = 'songSlider' class = 'song-slider' min = '0' step = '1' onchange="seekSong()" />
+                <div id = 'duration' class = 'duration'>00:00</div>
+            </div>
+            <div class = 'buttons'>
+                <i class="fa fa-step-backward" onclick="previous();"></i>
+                <i id = 'playButton' onclick = 'playOrPauseSong();'class="fas fa-play-circle"></i>
+                <i class="fa fa-step-forward" onclick = 'next();'></i>
+                <i class="fas fa-volume-off" onclick = 'mute();'></i>
+                <input type="range" id='volumeSlider' class = 'volume-slider' min='0' max='1' step = '0.01' onchange='adjustVolume();'/>
+
+            </div>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+</body>
+</html>
