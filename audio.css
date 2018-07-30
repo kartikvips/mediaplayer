@@ -21,6 +21,7 @@
 .drag-drop{
     width: 400px;
     height: 150px;
+    line-height: 30px;
     color: white;
     font-family: sans-serif;
     position: absolute;
@@ -149,6 +150,10 @@
     top: 40px;
     color: white;
     width: 200px;
+}
+
+.playlist-div *{
+    padding: 15px 0;
 }
 
 .playlist{

@@ -14,7 +14,7 @@ let playButton = document.getElementById('playButton');
 let header = document.getElementById('header');
 let dragDrop = document.getElementById('dragDrop');
 let playlist = document.getElementById('playlist');
-
+// song.crossOrigin = "anonymous";
 
 
 let canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_width, bar_height;
