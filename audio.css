@@ -169,9 +169,11 @@
 }
 .nameSong{
     padding: 0;
+
 }
 
 .nameSong:hover{
     background: gray;
+    cursor: pointer;
 }
 
