@@ -8,7 +8,6 @@ A web based MP3 media player that allows users to drag and drop audio files to p
 * Features
 * Technologies
 * Challenges
-* Snippets
 
 ## Features
 * Custom Media Player
@@ -17,4 +16,6 @@ A web based MP3 media player that allows users to drag and drop audio files to p
 
 ### Custom Media Player
 
-Created media player utilizing 
+Created custom media player utilizing Web Audio API. Necessary to create custom player to avoid default styling. 
+
+
