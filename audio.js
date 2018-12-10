@@ -15,6 +15,7 @@ let header = document.getElementById('header');
 let title = document.getElementById('title');
 let dragDrop = document.getElementById('dragDrop');
 let playlist = document.getElementById('playlist');
+let pauseText = document.getElementById('pausetext')
 // song.crossOrigin = "anonymous";
 
 
@@ -158,6 +159,7 @@ function hide(){
     playlist.style.visibility = "hidden";
     header.style.visibility = "visible";
     title.style.visibility = "hidden";
+    pauseText.style.visibility = "visible";
 }
 
 function reveal(){
@@ -166,6 +168,7 @@ function reveal(){
     playlist.style.visibility = "visible";
     header.style.visibility = "visible";
     title.style.visibility = "visible";
+    pauseText.style.visibility = "hidden";
 
 }
 
