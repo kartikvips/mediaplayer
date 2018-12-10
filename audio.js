@@ -285,7 +285,8 @@ function frameLooper() {
             ctx.beginPath();
             ctx.arc(x, y, circleR, 0, Math.PI * 2, false);
 
-            ctx.fillStyle = '#00CCFF';
+            // ctx.fillStyle = '#00CCFF';
+            ctx.fillStyle = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
             ctx.fill();
 
         // ctx.lineTo(x, y);
