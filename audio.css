@@ -25,7 +25,25 @@
     color: white;
     font-family: sans-serif;
     position: absolute;
-    top: calc(50% - 75px);
+    top: calc(60% - 75px);
+    left: calc(50% - 200px);
+    text-align: center;
+    /* background: black; */
+    opacity: 1.0;
+    border-radius: 10px;
+    visibility: visible;
+    /* display: none !important; */
+}
+
+.title {
+    width: 400px;
+    height: 150px;
+    line-height: 40px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: calc(33% - 75px);
     left: calc(50% - 200px);
     text-align: center;
     /* background: black; */

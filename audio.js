@@ -12,6 +12,7 @@ let currentSong = 0;
 let audioBox = document.getElementById('audio-box');
 let playButton = document.getElementById('playButton');
 let header = document.getElementById('header');
+let title = document.getElementById('title');
 let dragDrop = document.getElementById('dragDrop');
 let playlist = document.getElementById('playlist');
 // song.crossOrigin = "anonymous";
@@ -156,6 +157,7 @@ function hide(){
     dragDrop.style.visibility = "hidden";
     playlist.style.visibility = "hidden";
     header.style.visibility = "visible";
+    title.style.visibility = "hidden";
 }
 
 function reveal(){
@@ -163,6 +165,7 @@ function reveal(){
     dragDrop.style.visibility = "visible";
     playlist.style.visibility = "visible";
     header.style.visibility = "visible";
+    title.style.visibility = "visible";
 
 }
 
