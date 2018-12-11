@@ -30,7 +30,8 @@
                 </div> -->
                 <div class='pausetext' id = 'pausetext'>press space to pause</div>
                 <div class= 'info'>
-                    <i onclick="displayInfo();" class="fas fa-info-circle"></i>
+                    <!-- <i  class="far fa-info-circle"></i> -->
+                    <i class="fas fa-info-circle"></i>
                 </div>
                 <div class= 'maximize'>
                     <i onclick="fullScreen();" class="far fa-window-maximize"></i>
@@ -41,7 +42,7 @@
             </div>
             
         </div>
-       
+        
         <div class = 'mp3-player'>
             <canvas onclick="playOrPause()" id='analyser-render'></canvas>
             <!-- <div class='song-list'>
@@ -57,8 +58,11 @@
             or </br>
             Drag and drop an MP3 file into the browser to begin.
         </div>
-        <div class = 'playlist-div' id = 'playlistDiv'>
-            <ul class = 'playlist' id = 'playlist'></ul>
+        <div class = "right-side">
+            <div class = 'playlist-div' id = 'playlistDiv'>
+                <ul class = 'playlist' id = 'playlist'></ul>
+            </div>
+            
         </div>
         <div id='audio-box'>
             <!-- <div class = 'song-title' id = 'songTitle'>My song Title</div> -->

@@ -162,7 +162,7 @@
     margin: 0 5px;
 }
 
-.playlist-div{
+.right-side{
     position: absolute;
     right: 0;
     top: 40px;
@@ -188,6 +188,10 @@
 .nameSong{
     padding: 0;
 
+}
+
+.info{
+    color: white;
 }
 
 .nameSong:hover{
