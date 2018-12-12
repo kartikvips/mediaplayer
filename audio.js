@@ -300,7 +300,16 @@ function frameLooper() {
 }
 
 function fullScreen(){
-    hide();
-    document.body.webkitRequestFullScreen();
-    header.style.visibility = "hidden";
+    if (audioBox.style.visibility === "hidden"){
+        document.body.webkitExitFullScreen();
+    } else{
+        hide();
+        document.body.webkitRequestFullScreen();
+    }
+    
+    // header.style.visibility = "hidden";
+}
+
+function displayInfo(){
+
 }
