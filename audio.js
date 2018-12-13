@@ -161,6 +161,7 @@ function hide(){
     header.style.visibility = "visible";
     title.style.visibility = "hidden";
     pauseText.style.visibility = "visible";
+    infoBox.style.visibility = "hidden";
 }
 
 function reveal(){
@@ -169,6 +170,7 @@ function reveal(){
     playlist.style.visibility = "visible";
     header.style.visibility = "visible";
     title.style.visibility = "visible";
+    infoBox.style.visibility = "visible";
     pauseText.style.visibility = "hidden";
 
 }
