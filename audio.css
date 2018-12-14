@@ -173,6 +173,14 @@
     justify-content: space-between;
 }
 
+.left-side{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    color: white;
+    width: 200px;
+}
+
 .playlist-div *{
     padding: 15px 0;
 }
@@ -207,3 +215,6 @@
     color: white;
 }
 
+.info{
+    color: white;
+}
