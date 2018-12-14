@@ -17,6 +17,13 @@ let dragDrop = document.getElementById('dragDrop');
 let playlist = document.getElementById('playlist');
 let pauseText = document.getElementById('pausetext');
 let infoBox = document.getElementById('infoBox');
+let red = 0;
+let blue = 0; 
+let green = 0;
+let redSlider = document.getElementById('redSlider');
+let blueSlider = document.getElementById('blueSlider');
+let greenSlider = document.getElementById('greenSlider');
+
 // song.crossOrigin = "anonymous";
 
 
@@ -256,6 +263,15 @@ function initMp3Player() {
 //         ctx.fillRect(50, 50, 30, 30);
 //         ctx.fillStyle = '#fff';
 // }
+function changeRed(){
+    
+}
+function changeGreen(){
+
+}
+function changeBlue(){
+
+}
 
 function frameLooper() {
     window.requestAnimationFrame(frameLooper);
@@ -292,7 +308,7 @@ function frameLooper() {
             ctx.arc(x, y, circleR, 0, Math.PI * 2, false);
 
             // ctx.fillStyle = '#00CCFF';
-            ctx.fillStyle = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
+            ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
             ctx.fill();
 
         // ctx.lineTo(x, y);
