@@ -179,7 +179,18 @@
     top: 40px;
     color: white;
     width: 200px;
+    justify-content: center;
 }
+
+.bars {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 .playlist-div *{
     padding: 15px 0;

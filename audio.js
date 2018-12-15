@@ -264,13 +264,14 @@ function initMp3Player() {
 //         ctx.fillStyle = '#fff';
 // }
 function changeRed(){
-    
+    red = redSlider.value;
+
 }
 function changeGreen(){
-
+    green = greenSlider.value;
 }
 function changeBlue(){
-
+    blue = blueSlider.value;
 }
 
 function frameLooper() {
