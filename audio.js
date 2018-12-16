@@ -17,6 +17,7 @@ let dragDrop = document.getElementById('dragDrop');
 let playlist = document.getElementById('playlist');
 let pauseText = document.getElementById('pausetext');
 let infoBox = document.getElementById('infoBox');
+let barss = document.getElementById('barss');
 let red = 0;
 let blue = 0; 
 let green = 0;
@@ -165,6 +166,7 @@ function hide(){
     audioBox.style.visibility = "hidden";
     dragDrop.style.visibility = "hidden";
     playlist.style.visibility = "hidden";
+    barss.style.visibility = "hidden";
     header.style.visibility = "visible";
     title.style.visibility = "hidden";
     pauseText.style.visibility = "visible";
@@ -178,6 +180,7 @@ function reveal(){
     header.style.visibility = "visible";
     title.style.visibility = "visible";
     infoBox.style.visibility = "visible";
+    barss.style.visibility = "visible";
     pauseText.style.visibility = "hidden";
 
 }

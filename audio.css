@@ -44,7 +44,7 @@
     font-family: sans-serif;
     font-size: 30px;
     position: absolute;
-    top: calc(33% - 75px);
+    top: calc(40% - 75px);
     left: calc(50% - 200px);
     text-align: center;
     /* background: black; */
@@ -228,4 +228,56 @@
 
 .info{
     color: white;
+}
+
+.red-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+}
+
+.red-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+}
+.blue-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: blue;
+    cursor: pointer;
+}
+
+.blue-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: blue;
+    cursor: pointer;
+}
+.green-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: green;
+    cursor: pointer;
+}
+
+.green-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: green;
+    cursor: pointer;
 }
