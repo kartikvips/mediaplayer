@@ -15,7 +15,8 @@ let header = document.getElementById('header');
 let title = document.getElementById('title');
 let dragDrop = document.getElementById('dragDrop');
 let playlist = document.getElementById('playlist');
-let pauseText = document.getElementById('pausetext')
+let pauseText = document.getElementById('pausetext');
+let infoBox = document.getElementById('infoBox');
 // song.crossOrigin = "anonymous";
 
 
@@ -311,5 +312,10 @@ function fullScreen(){
 }
 
 function displayInfo(){
-
+    // console.log("gets here");
+    if(infoBox.style.visibility === "hidden"){
+        infoBox.style.visibility = "visible";
+    } else {
+        infoBox.style.visibility = "hidden";
+    }
 }
