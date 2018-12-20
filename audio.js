@@ -24,6 +24,7 @@ let green = 127;
 let redSlider = document.getElementById('redSlider');
 let blueSlider = document.getElementById('blueSlider');
 let greenSlider = document.getElementById('greenSlider');
+// let title = document.getElementById('title');
 
 // song.crossOrigin = "anonymous";
 
