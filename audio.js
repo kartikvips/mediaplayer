@@ -301,7 +301,7 @@ function frameLooper() {
 
 
     for (var i = 0; i < bars; i++) {
-        // let angle = 0.1 * (1000-i);
+
         let angle = 0.1 * (i);
         let x = (1 + angle) * Math.cos(angle) * 5 + centerX;
         let y = (1 + angle) * Math.sin(angle) * 5 + centerY;
@@ -310,18 +310,13 @@ function frameLooper() {
         bar_x = i * 2;
         bar_height = -(fbc_array[i] / 2.5);
         let circleR = (fbc_array[i] / 17);
-        //was 20
-     
-        // ctx.stroke();
-        // ctx.fillRect(bar_x, canvas.height, bar_width, bar_height);
+ 
             ctx.beginPath();
             ctx.arc(x, y, circleR, 0, Math.PI * 2, false);
 
-            // ctx.fillStyle = '#00CCFF';
             ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
             ctx.fill();
 
-        // ctx.lineTo(x, y);
     }
 
     // ctx.strokeStyle = `rgba(255, 0, 0)`;
