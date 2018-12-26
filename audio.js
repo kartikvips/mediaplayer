@@ -288,17 +288,10 @@ function frameLooper() {
     fbc_array = new Uint8Array(analyser.frequencyBinCount);
     analyser.getByteFrequencyData(fbc_array);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    // ctx.fillStyle = '#00CCFF';
+
     bars = 1000;
     let centerX = canvas.width / 2;
     let centerY = canvas.height / 2;
-    // console.log(fbc_array);
-    // ctx.lineWidth =0.1;
-    // ctx.beginPath();
-    // ctx.moveTo(centerX, centerY);
-    // ctx.fillRect(50, 50, 30, 30);
-    
-
 
     for (var i = 0; i < bars; i++) {
 
@@ -318,9 +311,6 @@ function frameLooper() {
             ctx.fill();
 
     }
-
-    // ctx.strokeStyle = `rgba(255, 0, 0)`;
-    // ctx.stroke();
 }
 
 function fullScreen(){
