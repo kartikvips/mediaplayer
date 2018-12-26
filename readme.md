@@ -20,8 +20,6 @@ Created custom media player utilizing Web Audio API. Necessary to create custom 
 
 ![Player](https://raw.githubusercontent.com/kartikvips/fable/master/docs/pics/Screen%20Shot%202018-06-15%20at%203.02.34%20PM.png)
 
-#### Snippet
-
 ```javascript
         <div id='audio-box'>
             <div class = 'song-scroll' id = 'songScroll'>
