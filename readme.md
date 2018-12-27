@@ -45,3 +45,34 @@ Created custon audio visualization that adapts to song frequency and amplitude a
 
 ![MediaPlayer](https://raw.githubusercontent.com/kartikvips/fable/master/docs/pics/Screen%20Shot%202018-06-15%20at%203.02.34%20PM.png)
 
+```javascript
+function frameLooper() {
+    window.requestAnimationFrame(frameLooper);
+    fbc_array = new Uint8Array(analyser.frequencyBinCount);
+    analyser.getByteFrequencyData(fbc_array);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    bars = 1000;
+    let centerX = canvas.width / 2;
+    let centerY = canvas.height / 2;
+
+    for (var i = 0; i < bars; i++) {
+
+        let angle = 0.1 * (i);
+        let x = (1 + angle) * Math.cos(angle) * 5 + centerX;
+        let y = (1 + angle) * Math.sin(angle) * 5 + centerY;
+ 
+        bar_width = canvas.width/bars;
+        bar_x = i * 2;
+        bar_height = -(fbc_array[i] / 2.5);
+        let circleR = (fbc_array[i] / 17);
+ 
+            ctx.beginPath();
+            ctx.arc(x, y, circleR, 0, Math.PI * 2, false);
+
+            ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
+            ctx.fill();
+
+    }
+}
+```
