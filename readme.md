@@ -79,6 +79,8 @@ function frameLooper() {
 
 ### Drag and Drop MP3 Files
 
+Feature allowing users to drag and drop Mp3 Files into the browser to play songs. Idea is to collect the local file address and store it temporarily allowing users to add those songs to a playlist.
+
 
 
 
