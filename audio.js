@@ -74,18 +74,15 @@ function onDrop(e) {
     }
 
 function loadSong(input = null) {
-        // debugger;
     if(input){
         songs.push(URL.createObjectURL(input));
         currentSong = songs.length - 1;
         song.src = songs[currentSong];
-        // songTitle.textContent = songs[currentSong];
         song.volume = volumeSlider.value;
         setTimeout(showDuration, 1000);
         playOrPause();
     } else {
         song.src = songs[currentSong];
-        // songTitle.textContent = songs[currentSong];
         song.volume = volumeSlider.value;
         setTimeout(showDuration, 1000);
     }
