@@ -81,6 +81,21 @@ function frameLooper() {
 
 Feature allowing users to drag and drop Mp3 Files into the browser to play songs. Idea is to collect the local file address and store it temporarily allowing users to add those songs to a playlist.
 
-
+```javascript
+function loadSong(input = null) {
+    if(input){
+        songs.push(URL.createObjectURL(input));
+        currentSong = songs.length - 1;
+        song.src = songs[currentSong];
+        song.volume = volumeSlider.value;
+        setTimeout(showDuration, 1000);
+        playOrPause();
+    } else {
+        song.src = songs[currentSong];
+        song.volume = volumeSlider.value;
+        setTimeout(showDuration, 1000);
+    }
+}
+```
 
 
