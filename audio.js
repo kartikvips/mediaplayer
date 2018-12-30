@@ -143,20 +143,13 @@ function showDuration() {
 
 function playOrPause(){
     if (song.paused) {
-        // debugger;
         song.play();
         playButton.className = "fas fa-pause";
         hide();
-        // canvas.style.opacity = '1';
-        // header.style.visibility = "hidden";
-        // debugger;
     } else {
         song.pause();
-        // canvas.style.opacity = '0.5';
         playButton.className = "fas fa-play-circle";
         reveal();
-        // header.style.visibility = "visible";
-        // audioBox.style.display = "flex";
     }
 }
 
