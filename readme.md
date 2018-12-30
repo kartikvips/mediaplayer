@@ -98,4 +98,12 @@ function loadSong(input = null) {
 }
 ```
 
+## Technologies
+* Web Audio API
+
+### Web Audio API
+
+Utilized Web Audio API to connect media player capablities to HTML elements. 
+
+
 
