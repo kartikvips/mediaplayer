@@ -322,3 +322,11 @@ function displayInfo(){
         infoBox.style.visibility = "hidden";
     }
 }
+
+function displayPlayer(){
+    if (audioBox.style.visibility === "hidden") {
+        audioBox.style.visibility = "visible";
+    } else {
+        audioBox.style.visibility = "hidden";
+    }
+}
