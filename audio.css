@@ -230,6 +230,10 @@
     color: white;
 }
 
+.player-display{
+    color:white;
+}
+
 .red-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;

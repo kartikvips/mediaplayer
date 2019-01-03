@@ -318,8 +318,10 @@ function displayInfo(){
     // console.log("gets here");
     if(infoBox.style.visibility === "hidden"){
         infoBox.style.visibility = "visible";
+        playlist.style.visibility = "visible";
     } else {
         infoBox.style.visibility = "hidden";
+        playlist.style.visibility = "hidden";
     }
 }
 
