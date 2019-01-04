@@ -7,7 +7,6 @@ A web based MP3 media player that allows users to drag and drop audio files to p
 ## Introduction
 * Features
 * Technologies
-* Challenges
 
 ## Features
 * Custom Media Player
@@ -99,11 +98,12 @@ function loadSong(input = null) {
 ```
 
 ## Technologies
-* Web Audio API
 
 ### Web Audio API
 
 Utilized Web Audio API to connect media player capablities to HTML elements. 
 
+```javascript
 
+```
 
