@@ -104,6 +104,19 @@ function loadSong(input = null) {
 Utilized Web Audio API to connect media player capablities to HTML elements. 
 
 ```javascript
+function initMp3Player() {
 
+    context = new AudioContext();
+    analyser = context.createAnalyser();
+    canvas = document.getElementById('analyser-render');
+    ctx = canvas.getContext('2d');
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+    source = context.createMediaElementSource(song);
+    source.connect(analyser);
+    analyser.connect(context.destination);
+
+    frameLooper();
+}
 ```
 

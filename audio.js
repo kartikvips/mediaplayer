@@ -230,7 +230,7 @@ function mute(){
 }
 
 function initMp3Player() {
-    // document.getElementById('audio-box').appendChild(audio);
+
     context = new AudioContext();
     analyser = context.createAnalyser();
     canvas = document.getElementById('analyser-render');
@@ -241,7 +241,6 @@ function initMp3Player() {
     source.connect(analyser);
     analyser.connect(context.destination);
 
-    // animate();
     frameLooper();
 }
 
