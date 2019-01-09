@@ -264,7 +264,6 @@ function initMp3Player() {
 // }
 function changeRed(){
     red = redSlider.value;
-
 }
 function changeGreen(){
     green = greenSlider.value;
@@ -272,7 +271,6 @@ function changeGreen(){
 function changeBlue(){
     blue = blueSlider.value;
 }
-
 function changeTitleColor(){
     title.style.color = `rgb(${red}, ${green}, ${blue})`;
 }
