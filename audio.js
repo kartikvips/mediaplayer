@@ -256,7 +256,6 @@ function initMp3Player() {
 
     frameLooper();
 }
-
 // function animate() {
 //     window.requestAnimationFrame(animate);
 //         ctx.fillRect(50, 50, 30, 30);
