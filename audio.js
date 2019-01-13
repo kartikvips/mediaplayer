@@ -308,11 +308,10 @@ function frameLooper() {
 function fullScreen(){
     if (audioBox.style.visibility === "hidden"){
         document.body.webkitExitFullScreen();
-    } else{
+    } else {
         hide();
         document.body.webkitRequestFullScreen();
     }
-    
     // header.style.visibility = "hidden";
 }
 
