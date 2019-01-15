@@ -185,7 +185,6 @@ function reveal(){
 
 }
 
-
 function playOrPauseSong() {
     if(playCount === 0){
         initMp3Player();
