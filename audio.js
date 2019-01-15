@@ -24,6 +24,7 @@ let green = 127;
 let redSlider = document.getElementById('redSlider');
 let blueSlider = document.getElementById('blueSlider');
 let greenSlider = document.getElementById('greenSlider');
+let playCount = 0;
 // let title = document.getElementById('title');
 
 // song.crossOrigin = "anonymous";
@@ -33,7 +34,6 @@ let canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_width, b
 
 window.onload = () => { 
     loadSong();
-    initMp3Player();
     window.addEventListener('drop', onDrop, false);
     window.addEventListener('dragover', onDrag, false);
     window.addEventListener('resize', resizeCanvas, false);
@@ -120,6 +120,10 @@ function generatePlaylist() {
 }
 
 function playSong(idx){
+    if (playCount === 0) {
+        initMp3Player();
+    }
+    playCount++;
     currentSong = idx;
     loadSong();
     hide();
@@ -142,6 +146,10 @@ function showDuration() {
 }
 
 function playOrPause(){
+    if (playCount === 0) {
+        initMp3Player();
+    }
+    playCount++;
     if (song.paused) {
         song.play();
         playButton.className = "fas fa-pause";
@@ -178,6 +186,10 @@ function reveal(){
 
 
 function playOrPauseSong() {
+    if(playCount === 0){
+        initMp3Player();
+    }
+    playCount++;
     if(song.paused){
         song.play();
         playButton.className = "fas fa-pause";
