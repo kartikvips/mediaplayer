@@ -8,6 +8,7 @@ let duration = document.getElementById('duration');
 let volumeSlider = document.getElementById('volumeSlider');
 let previousVolume = [];
 let song = new Audio();
+// song.crossOrigin = "anonymous";
 let currentSong = 0;
 let audioBox = document.getElementById('audio-box');
 let playButton = document.getElementById('playButton');
