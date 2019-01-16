@@ -64,7 +64,7 @@ function onDrag(e) {
     //     duration: 150
     // });
     return false;
-    }
+}
 
 function onDrop(e) {
     e.stopPropagation();
