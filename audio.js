@@ -27,9 +27,7 @@ let blueSlider = document.getElementById('blueSlider');
 let greenSlider = document.getElementById('greenSlider');
 let playCount = 0;
 // let title = document.getElementById('title');
-
 // song.crossOrigin = "anonymous";
-
 
 let canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_width, bar_height;
 
