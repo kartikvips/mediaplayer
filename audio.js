@@ -70,7 +70,7 @@ function onDrop(e) {
     var droppedFiles = e.dataTransfer.files;
     loadSong(droppedFiles[0]); // initiates audio from the dropped file
     generatePlaylist();
-    }
+}
 
 function loadSong(input = null) {
     if(input){
