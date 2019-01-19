@@ -100,7 +100,6 @@ function generatePlaylist() {
     playlist.innerHTML = "";
     for (let i = 0; i < songs.length; i++) {
         let iterSong = new Audio(songs[i]);
-
         // songs[i];
         let ul = document.createElement('ul');
         let songName = document.createElement('li');
