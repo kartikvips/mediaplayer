@@ -112,7 +112,6 @@ function generatePlaylist() {
         // ul.appendChild(timer);
         ul.addEventListener('click',() => playSong(i));
         ul.className='nameSong';
-        
         playlist.appendChild(ul);
     }
 }
