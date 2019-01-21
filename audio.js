@@ -178,7 +178,6 @@ function reveal(){
     infoBox.style.visibility = "visible";
     barss.style.visibility = "visible";
     pauseText.style.visibility = "hidden";
-
 }
 
 function playOrPauseSong() {
