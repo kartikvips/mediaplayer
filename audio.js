@@ -223,8 +223,7 @@ function adjustVolume(){
 
 let vol = 0;
 
-function mute(){
-   
+function mute(){  
     if (song.volume === 0) {
         song.volume = vol;
         volumeSlider.value = vol;
