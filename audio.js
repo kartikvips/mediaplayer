@@ -236,7 +236,6 @@ function mute(){
 }
 
 function initMp3Player() {
-
     context = new AudioContext();
     analyser = context.createAnalyser();
     canvas = document.getElementById('analyser-render');
