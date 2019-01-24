@@ -245,7 +245,6 @@ function initMp3Player() {
     source = context.createMediaElementSource(song);
     source.connect(analyser);
     analyser.connect(context.destination);
-
     frameLooper();
 }
 
