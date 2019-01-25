@@ -267,7 +267,6 @@ function changeTitleColor(){
     title.style.color = `rgb(${red}, ${green}, ${blue})`;
 }
 
-
 function frameLooper() {
     window.requestAnimationFrame(frameLooper);
     fbc_array = new Uint8Array(analyser.frequencyBinCount);
