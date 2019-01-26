@@ -278,7 +278,6 @@ function frameLooper() {
     let centerY = canvas.height / 2;
 
     for (var i = 0; i < bars; i++) {
-
         let angle = 0.1 * (i);
         let x = (1 + angle) * Math.cos(angle) * 5 + centerX;
         let y = (1 + angle) * Math.sin(angle) * 5 + centerY;
