@@ -292,7 +292,6 @@ function frameLooper() {
 
             ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
             ctx.fill();
-
     }
 }
 
