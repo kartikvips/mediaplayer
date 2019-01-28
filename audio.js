@@ -287,11 +287,11 @@ function frameLooper() {
         bar_height = -(fbc_array[i] / 2.5);
         let circleR = (fbc_array[i] / 17);
  
-            ctx.beginPath();
-            ctx.arc(x, y, circleR, 0, Math.PI * 2, false);
+        ctx.beginPath();
+        ctx.arc(x, y, circleR, 0, Math.PI * 2, false);
 
-            ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
-            ctx.fill();
+        ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
+        ctx.fill();
     }
 }
 
