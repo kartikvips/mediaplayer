@@ -249,6 +249,7 @@
     background: red;
     cursor: pointer;
 }
+
 .blue-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
