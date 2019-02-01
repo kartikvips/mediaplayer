@@ -267,6 +267,7 @@
     background: blue;
     cursor: pointer;
 }
+
 .green-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
