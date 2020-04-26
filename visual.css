@@ -90,10 +90,10 @@ body {
 }
 
 #analyser-render {
-    /* width: 100%; */
+    width: 100%;
     /* height: calc(100% - 50px); */
     /* height: 100%; */
     /* background:#554477; */
-    background:black;
+    background: black;
 }
 
