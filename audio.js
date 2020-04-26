@@ -1,5 +1,5 @@
 
-let songs = ["song1.mp3", "song2.mp3", "song3.mp3", "song4.mp3"];
+let songs = ["song1.mp3", "song2.mp3", "song3.mp3", "song4.mp3", "song5.mp3"];
 
 // let songTitle = document.getElementById('songTitle');
 let songSlider = document.getElementById('songSlider');
@@ -19,9 +19,9 @@ let playlist = document.getElementById('playlist');
 let pauseText = document.getElementById('pausetext');
 let infoBox = document.getElementById('infoBox');
 let barss = document.getElementById('barss');
-let red = 127;
-let blue = 127; 
-let green = 127;
+let red = 0;
+let blue = 255; 
+let green = 255;
 let redSlider = document.getElementById('redSlider');
 let blueSlider = document.getElementById('blueSlider');
 let greenSlider = document.getElementById('greenSlider');
