@@ -1,5 +1,5 @@
 
-let songs = ["song1.mp3", "song2.mp3", "song3.mp3", "song4.mp3", "song5.mp3", "song6.mp3"];
+let songs = ["one.mp3", "two.mp3", "three.mp3", "four.mp3", "five.mp3", "six.mp3"];
 
 // let songTitle = document.getElementById('songTitle');
 let songSlider = document.getElementById('songSlider');
